@@ -1,4 +1,4 @@
-fetch("http://localhost:3000/api/songs")
+fetch("https://mongodb-tutorial-backend.onrender.com/api/songs")
   .then(response => response.json())
   .then(data => {
     const songList = document.getElementById("songList");

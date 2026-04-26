@@ -10,7 +10,7 @@ document.getElementById("songForm").addEventListener("submit", async function(e)
     };
 
     try {
-        await fetch("http://localhost:3000/api/songs", {
+        await fetch("https://mongodb-tutorial-backend.onrender.com/api/songs", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json"
