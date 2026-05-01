@@ -5,16 +5,19 @@
 </head>
 <body>
 
-<h1>Add Song</h1>
+<h2>Add Song</h2>
 
-<form id="songForm">
-    <input type="text" id="title" placeholder="Song Title" required>
-    <input type="text" id="artist" placeholder="Artist" required>
-    <button type="submit">Add Song</button>
-</form>
+<input type="text" id="title" placeholder="Song Title"><br><br>
+<input type="text" id="artist" placeholder="Artist"><br><br>
 
-<a href="index.html">Back to Songs</a>
+<button id="addBtn">Add Song</button>
 
+<p id="message"></p>
+
+<!-- 🔐 AUTH CHECK (MUST BE FIRST) -->
+<script src="auth.js"></script>
+
+<!-- Your existing script -->
 <script src="add.js"></script>
 
 </body>

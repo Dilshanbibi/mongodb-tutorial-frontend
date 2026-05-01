@@ -1,17 +1,33 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Song List</title>
+    <title>All Songs</title>
 </head>
 <body>
 
-<h1>All Songs</h1>
+<!-- LOGOUT BUTTON -->
+<button onclick="logout()">Logout</button>
 
-<a href="add.html">Add New Song</a>
+<h1>All Songs</h1>
 
 <ul id="songList"></ul>
 
-<script src="script.js"></script>
+<br>
+<a href="add.html">Add Song</a>
+
+<!-- Your existing script (for loading songs) -->
+<script src="index.js"></script>
+
+<!--  LOGOUT FUNCTION -->
+<script>
+function logout() {
+    localStorage.removeItem("token");
+    localStorage.removeItem("username");
+    localStorage.removeItem("auth");
+
+    window.location.href = "login.html";
+}
+</script>
 
 </body>
 </html>
